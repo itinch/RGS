@@ -9,15 +9,15 @@ We want to write a system that allows our admins to submit credit card numbers f
 ## Requirements 
 
 Build a Flutter mobile application that can do the following:
-- Allow the user to submit credit card details. Details should include: Card Number, Card Type, CVV, Issuing Country
-- Ability to infer Card Type from Credit Card number would be beneficial.
-- Check the specified country to make sure it doesn’t exist in a list of banned countries.
-- Make the list of banned countries configurable.
-- If the card is valid – store it in local storage.
-- Display all the credit cards that have been captured during the session.
-- Don’t capture the same card twice.
-- Please also add the ability to scan a credit card (examples attached), and pre-populate the card number and infer the cart type.
-- Authorization is not necessary for the purposes of this test.
+- Allow the user to submit credit card details. Details should include: Card Number, Card Type, CVV, Issuing Country (DONE)
+- Ability to infer Card Type from Credit Card number would be beneficial. (DONE)
+- Check the specified country to make sure it doesn’t exist in a list of banned countries. (DONE)
+- Make the list of banned countries configurable. (DONE)
+- If the card is valid – store it in local storage. (DONE)
+- Display all the credit cards that have been captured during the session. (DONE)
+- Don’t capture the same card twice. (DONE)
+- Please also add the ability to scan a credit card (examples attached), and pre-populate the card number and infer the cart type. (NOT DONE)
+- Authorization is not necessary for the purposes of this test. (OK)
 
 ## Guidelines
 
@@ -41,14 +41,13 @@ Please search https://pub.dev/ for the corrresponding libraries to better unders
 # Notes to Reviewer: 
 - Files in app folder contains settings for whole app. 
 - Files in model also consists of enums and lists, i dont want to create folders for single files. 
-- I did not implement BLoC, but later on i used Provider. 
+- I anticipated this project to be on one page, but changed my approach towards the end realising the blocking does better on a second page. Which is why i did not implement BLoC, but is also why i did add Provider.  
 - Files in screen folders are for their corresponding self describing purposes. 
 - Files in services are for services, please excuse adding a state file. This project is small so didnt want to create folders for single files. 
-- I have updated README with Assignment details.
-- I used the following for Luhn's Algorithm https://medium.com/@durgeshparekh381/securing-transactions-validating-credit-card-numbers-decoded-techtalk-2bad15c2089e to validate Account Numbers. 
--- I ran out of time before i could implement: 
---- textTheme from ThemeData, 
---- Strings converting all strings
---- Lots of UI and Styling 
+- I have updated README with Assignment details and notes. 
+- I used the following for Luhn's Algorithm https://medium.com/@durgeshparekh381/securing-transactions-validating-credit-card-numbers-decoded-techtalk-2bad15c2089e as a guideline for Card Number validation. 
+- I ran out of time before i could implement: textTheme-from-ThemeData, string-conversion, UI and styling and testing. 
+
+
 
 Please feel free reaching out to ian.inch@gmail.com for any questions. 
